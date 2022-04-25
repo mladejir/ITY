@@ -1,0 +1,59 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{times}
+\usepackage[left=2cm,text={17cm, 24cm},top=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{url}
+\DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>} \urlstyle{tt}}
+\usepackage[unicode, breaklinks]{hyperref}
+\def\UrlBreaks{\do\/\do-}
+
+\DeclareUnicodeCharacter{0301}{\'{e}}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \Huge
+        \textsc{Vysoké učení technické v~Brně}\\
+        \huge
+        \textsc{Fakulta informačních technologií}\\
+        \vspace{\stretch{0.382}}
+        \LARGE
+        Typografie a publikování\,--\,4. projekt\\
+        \Huge
+        Citace\\
+        \vspace{\stretch{0.618}}
+    \end{center}
+    {\Large \today \hfill Jiří Mládek}
+\end{titlepage}
+
+\section{Webová typografie}
+
+Pokud se chce vývojář webových stránek odlišit od konkurence, nesmí zapomínat ani na základní typografiká pravidla. Ta totiž u~uživatelů hrají nevědomě obrovskou roli. Hned první pohled na stránku uživatele buď upoutá, nebo naopak odradí. Konkrétněji jsou psychologické účinky na čtenáře popsány zde \cite{Grigerova2020}.
+
+\subsection{Velikost písma}
+Asi nejdůležitějším aspektem je velikost písma. Ta se pro web na desktopu pohybuje okolo 15-22 pixelů a pro mobil 14-16 pixelů. Dávejte si ale pozor, každý druh písma má jinou optickou velikost \cite{Marcikova2020}.
+
+\subsection{Font}
+Dále je důležité správně vybrat font písma. Pravidlo říká, že bychom měli nakombinovat 3 písmové rodiny: dobře čitelné serifové písmo, jednoduché bezserifové písmo a také titulkový font \cite{Saltz2010}.  K~doporučeným fontům patří font \emph{Verdana} a \emph{Georgia} \cite{Anonymous2004}. Toto souvisí se správným použitím nadpisů a podnadpisů, o~kterém se pojednává v~knize od Jaroslava Hrubého \cite{Hruby2003}.
+
+\subsection{Řádek}
+Pro lepší čitelnost je důležité mít správnou výšku řádku. Pro zachování vhodného odstupu mezi řádky je doporučeno, aby poměr výšky řádku a velikosti písma byl minimálně 1,4 \cite{Cecetka2010}.
+Délka řádku by měla být závislá na velikosti obrazovky, je ale důležité myslet na to, že moc dlouhá délka řádku namáhá oči \cite{Kupferschmidt2015}.
+
+\subsection{Kontrast}
+Kvůli čitelnosti je také důležité mít dostatečný kontrast mezi písmem a pozadím. Zde platí pravidlo jednoduchosti, tedy černé písmo na bílém pozadí. Je také vhodné, aby čtenář ihned poznal, která část textu je důležitá. Toho docílíme použitím tučného písma \cite{Brda2016}.
+
+\subsection{V~jednoduchosti je krása}
+V~posledních letech se od nadbytečných prvků v~designu vracíme zpět k~jednoduchosti. Jedná se o~tzv. flat design, který se snaží o~co nejjednodušší rozhranní, odstraňuje vše nadbytečné \cite{Uhlirova2016}.
+Tento přístup neplatí pouze pro web, ale například i pro knihy. Ve svém článku o~tom píše Martin Pecina. Popisuje mimo jiné, jaké vlastnosti je vhodné zvolit pro konkrétní typy knih \cite{Pecina2015}.
+
+
+    \newpage
+	\bibliographystyle{czechiso}
+	\renewcommand{\refname}{Literatura}
+	\bibliography{proj4}
+
+\end{document}
